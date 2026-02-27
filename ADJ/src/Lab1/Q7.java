@@ -1,4 +1,4 @@
-// 7. Write a jav aprogram to implement the concept of Method Overloading.
+// 7. Write a java program to implement the concept of Method Overloading.
 
 package Lab1;
 
