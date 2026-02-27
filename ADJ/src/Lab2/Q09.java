@@ -2,6 +2,21 @@
 
 package Lab2;
 
-public class Q09 {
+class multiThread extends Thread {
+    public void run() {
+        System.out.println(
+                "Name =" + Thread.currentThread().getName() + "and Priority =" + Thread.currentThread().getPriority());
+    }
+}
 
+public class Q09 {
+    public static void main(String[] args) {
+        multiThread t1 = new multiThread();
+        multiThread t2 = new multiThread();
+
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t2.setPriority(Thread.MIN_PRIORITY);
+        t1.start();
+        t2.start();
+    }
 }

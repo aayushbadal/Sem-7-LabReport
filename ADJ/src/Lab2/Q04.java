@@ -6,6 +6,29 @@
 
 package Lab2;
 
-public class Q04 {
+import java.util.Scanner;
 
+class BalanceException extends Exception {
+    public BalanceException(String m) {
+        super(m);
+    }
+}
+
+public class Q04 {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter balance amount:");
+            double b = sc.nextDouble();
+            System.out.println("Enter Withdraw Amount:");
+            double w = sc.nextDouble();
+            sc.close();
+            if (b >= w)
+                System.out.println("Remaining Balance: " + (b - w));
+            else
+                throw (new BalanceException("Insufficient Balance!!"));
+        } catch (BalanceException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }
