@@ -6,6 +6,6 @@
 
 package Lab2;
 
-public class Q5 {
+public class Q05 {
 
 }
