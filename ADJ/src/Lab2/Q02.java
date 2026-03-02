@@ -2,6 +2,14 @@
 
 package Lab2;
 
-public class Q02 {
+import HCOE.Student;
 
+public class Q02 {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student(101, "Ramesh");
+        s1.display();
+        System.out.println("--------------");
+        s2.display();
+    }
 }
