@@ -174,7 +174,6 @@ making it suitable for grid-based and high-dimensional data.*/
 //  END
 
 // output
-// kandelmilan@kandels-MacBook-Air DatawareHouseandDataMining % ./K-means++Alg
 // Enter number of data points: 8
 // Enter number of clusters: 3
 // Enter data points (x y):

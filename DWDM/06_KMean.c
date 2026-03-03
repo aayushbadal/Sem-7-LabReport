@@ -149,7 +149,6 @@ mean of the clustered points. This process repeats until the centroids no longer
 // END
 
 // OUTPUT
-// kandelmilan@kandels-MacBook-Air DatawareHouseandDataMining % ./K-meansAlgorithm
 // Enter number of data points: 7
 // Enter number of clusters: 2
 // Enter data points (x y):

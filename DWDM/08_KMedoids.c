@@ -173,7 +173,6 @@ int main()
 // END
 
 // OUTPUT:
-// kandelmilan@kandels-MacBook-Air DatawareHouseandDataMining % ./k-medoidsAlg
 // Enter number of data points: 10
 // Enter number of clusters: 2
 // Enter data points:
