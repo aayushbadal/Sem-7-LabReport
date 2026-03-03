@@ -9,6 +9,7 @@ public class Q03 {
     public static void main(String[] args) {
         try {
             int a = 10 / 0;
+            System.out.println("No any Exception." + a);
         } catch (ArithmeticException e) {
             System.out.println(e);
         }
@@ -22,6 +23,7 @@ public class Q03 {
 
         try {
             int num = Integer.parseInt("abc");
+            System.out.println("No any Exception. " + num);
         } catch (NumberFormatException e) {
             System.out.println(e);
         }
