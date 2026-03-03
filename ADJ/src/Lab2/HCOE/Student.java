@@ -1,8 +1,8 @@
-package HCOE;
+package Lab2.HCOE;
 
 public class Student {
-    int roll;
-    String name;
+    public int roll;
+    public String name;
 
     public Student() {
     }

@@ -2,7 +2,7 @@
 
 package Lab2;
 
-import HCOE.Student;
+import Lab2.HCOE.Student;
 
 public class Q02 {
     public static void main(String[] args) {
