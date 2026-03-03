@@ -22,7 +22,7 @@ public class Q03 {
         }
 
         try {
-            int num = Integer.parseInt("abc");
+            int num = Integer.parseInt("ThisIsAString");
             System.out.println("No any Exception. " + num);
         } catch (NumberFormatException e) {
             System.out.println(e);
