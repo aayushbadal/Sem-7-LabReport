@@ -36,3 +36,53 @@ int main()
 
     return 0;
 }
+
+// OUTPUT :
+//  kandelmilan@kandels-MacBook-Air DatawareHouseandDataMining % ./outlier
+//  Enter number of elements: 6
+//  Enter the elements:
+//  1 2 3 4 5 100
+
+// Mean = 19.17
+// Standard Deviation = 36.17
+
+// Outliers are:
+// 100.00
+
+// OUTLIER DETECTION USING Z-SCORE METHOD
+
+// PSEUDO CODE
+//  START
+//  INPUT number of data points n
+//  IF n <= 1
+//      PRINT "At least 2 data points required"
+//      STOP
+//  END IF
+//  DECLARE array data[n]
+//  SET sum = 0
+//  FOR each data value
+//      INPUT value
+//      ADD value to sum
+//  END FOR
+//  COMPUTE mean = sum / n
+//  SET sd = 0
+//  FOR each data value
+//      sd = sd + (value - mean)^2
+//  END FOR
+//  COMPUTE sd = sqrt(sd / (n - 1))
+//  IF sd == 0
+//      PRINT "No Outliers (All values same)"
+//      STOP
+//  END IF
+//  SET found = FALSE
+//  FOR each data value
+//      COMPUTE z = (value - mean) / sd
+//      IF |z| >= 3
+//          PRINT value as Outlier
+//          SET found = TRUE
+//      END IF
+//  END FOR
+//  IF found == FALSE
+//      PRINT "No Outliers Found"
+//  END IF
+//  STOP
