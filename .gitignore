@@ -1,68 +1,36 @@
 # ===============================
-# Java compiled files
+# Keep ONLY source code (Java + C)
 # ===============================
-*.class
-*.jar
-*.war
-*.ear
 
-# ===============================
-# Build directories
-# ===============================
+# NetBeans project files
+nbproject/
+
+# Build & output folders
 build/
 dist/
 out/
 target/
 bin/
 
-# ===============================
-# NetBeans specific
-# ===============================
-nbproject/private/
-nbproject/private/*
-nbproject/build-impl.xml
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
 
-# Optional (keep if you want shared config removed)
-# nbproject/project.properties
-# nbproject/genfiles.properties
+# Compiled C files (executables & objects)
+*.o
+*.out
+*.exe
 
-# ===============================
-# IDE files
-# ===============================
+# IDE settings
 .vscode/
 .idea/
 *.iml
 
-# ===============================
-# Logs
-# ===============================
-*.log
-
-# ===============================
-# OS files
-# ===============================
+# OS & temporary files
 .DS_Store
 Thumbs.db
-
-# ===============================
-# Temporary files
-# ===============================
+*.log
 *.tmp
 *.swp
-*.bak
-
-# ===============================
-# Executables
-# ===============================
-*.exe
-
-# ===============================
-# Other unnecessary files
-# ===============================
-*.txt
-
-# ===============================
-# Misc
-# ===============================
-*.cache
-*.pid
