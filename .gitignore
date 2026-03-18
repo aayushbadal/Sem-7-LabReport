@@ -34,3 +34,5 @@ Thumbs.db
 *.log
 *.tmp
 *.swp
+*.xml
+*.mf
