@@ -9,10 +9,22 @@
 # ===============================
 # Build directories
 # ===============================
-bin/
 build/
+dist/
 out/
 target/
+bin/
+
+# ===============================
+# NetBeans specific
+# ===============================
+nbproject/private/
+nbproject/private/*
+nbproject/build-impl.xml
+
+# Optional (keep if you want shared config removed)
+# nbproject/project.properties
+# nbproject/genfiles.properties
 
 # ===============================
 # IDE files
@@ -37,13 +49,20 @@ Thumbs.db
 # ===============================
 *.tmp
 *.swp
+*.bak
 
 # ===============================
 # Executables
 # ===============================
 *.exe
 
-#================================
-# Other Files
-#================================
+# ===============================
+# Other unnecessary files
+# ===============================
 *.txt
+
+# ===============================
+# Misc
+# ===============================
+*.cache
+*.pid
