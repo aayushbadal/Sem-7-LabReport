@@ -5,10 +5,10 @@ import javax.mail.*;
 import javax.mail.internet.*;
 public class Q4 {
     public static void main(String[] args) {
-        String to = "siddbazbuzz@gmail.com";
-        String from = "aayushbadal922@gmail.com";
-        String subject = "Test Mail";
-        String msg = "This is a Mail Sent from Apache NetBeans Application using Java Programming Language.\nK chha Haal Khabar?";
+        String to = "";
+        String from = "";
+        String subject = "";
+        String msg = "";
         Send(to,from,subject,msg);
     }
     private static void Send(String to, String from, String subject, String msg){
@@ -21,8 +21,8 @@ public class Q4 {
         prop.setProperty("mail.smtp.ssl.protocols", "TLSv1.2");
         
         //Get Session Object
-        String username = "aayushbadal922@gmail.com";
-        String password = "nhed nihn jgja xyhk";
+        String username = "";
+        String password = "";
         
         Session session = Session.getInstance(prop,new Authenticator(){
            @Override
