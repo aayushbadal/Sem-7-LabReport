@@ -21,8 +21,8 @@ public class Q4 {
         prop.setProperty("mail.smtp.ssl.protocols", "TLSv1.2");
         
         //Get Session Object
-        String username = "";
-        String password = "";
+        String username = ""; // Credentials
+        String password = ""; // Credentials
         
         Session session = Session.getInstance(prop,new Authenticator(){
            @Override
