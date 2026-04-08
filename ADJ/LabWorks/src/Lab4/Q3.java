@@ -6,34 +6,74 @@
 package Lab4;
 import javax.swing.*;
 import java.awt.event.*;
-import java.awt.*;
+
 public class Q3 implements ActionListener{
-    JFrame f;
-    JLabel l1, l2;
-    JTextField t1, t2;
-    JButton b1;
+   JFrame f;
+    JLabel l1, l2, result;
+    JTextField usernameField;
+    JPasswordField passwordField;
+    JButton loginBtn;
     public Q3(){
-        f = new JFrame("Login Form");
-        l1= new JLabel("Username");
-        l2 = new JLabel("Password");
-        t1 = new JTextField(10);
-        t1.setToolTipText("abc@example.com");
-        t2 = new JTextField(8);
-        b1 = new JButton("Login");
-        
-        f.setSize(300,300);
+         f = new JFrame("Login Form");
+
+        // Labels
+        l1 = new JLabel("Username:");
+        l1.setBounds(50, 50, 100, 30);
+
+        l2 = new JLabel("Password:");
+        l2.setBounds(50, 100, 100, 30);
+
+        // Text Fields
+        usernameField = new JTextField();
+        usernameField.setBounds(150, 50, 150, 30);
+        usernameField.setToolTipText("Enter your username here");
+
+        passwordField = new JPasswordField();
+        passwordField.setBounds(150, 100, 150, 30);
+        passwordField.setToolTipText("Enter your password here");
+
+        // Button
+        loginBtn = new JButton("Login");
+        loginBtn.setBounds(120, 150, 100, 30);
+        loginBtn.setToolTipText("Click to login");
+
+        // Result Label
+        result = new JLabel("");
+        result.setBounds(50, 200, 300, 30);
+
+        // Action Listener
+        loginBtn.addActionListener(this);
+
+        // Add components
+        f.add(l1);
+        f.add(l2);
+        f.add(usernameField);
+        f.add(passwordField);
+        f.add(loginBtn);
+        f.add(result);
+
+        // Frame settings
+        f.setSize(400, 300);
+        f.setLayout(null);
         f.setVisible(true);
-        f.setDefaultCloseOperation(3);
-        f.setLayout(new FlowLayout());
-        f.add(l1); f.add(t1);
-        f.add(l2); f.add(t2);
-        f.add(b1);
-        
-        b1.addActionListener(this);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    public void actionPerformed(ActionEvent e){
-        
+
+    // Event Handling
+    public void actionPerformed(ActionEvent e) {
+        String username = usernameField.getText();
+        String password = new String(passwordField.getPassword());
+
+        // Validation
+        if (username.isEmpty() || password.isEmpty()) {
+            result.setText("Error: Fields cannot be empty!");
+        } else if (username.equals("admin") && password.equals("1234")) {
+            result.setText("Login Successful! Username: " + username + " Password: " + password);
+        } else {
+            result.setText("Invalid Username or Password!");
+        }
     }
+
     public static void main(String[] args) {
         new Q3();
     }
