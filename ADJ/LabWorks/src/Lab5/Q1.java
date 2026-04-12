@@ -1,4 +1,4 @@
-// Lab-5 : 
+// Lab-5 : Database Connectivity
 //1. Write a Java Console program to perform CRUD operation on database [Database: Company Table: Employee(EID, Name, Address, And Salary)]
 package Lab5;
 import java.sql.*;

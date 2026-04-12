@@ -5,6 +5,7 @@ Assume user table having fields Uid  and password in the database named account.
 package Lab5;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
@@ -24,13 +25,13 @@ public class Q4 implements ActionListener, KeyListener {
         l1 = new JLabel("User ID:");
         l2 = new JLabel("Password:");
 
-        t1 = new JTextField();
-        t2 = new JPasswordField();
+        t1 = new JTextField(15);
+        t2 = new JPasswordField(10);
 
         b1 = new JButton("OK");
         b2 = new JButton("Cancel");
 
-        f.setLayout(null);
+        f.setLayout(new FlowLayout());
 
         l1.setBounds(50, 50, 80, 25);
         t1.setBounds(140, 50, 150, 25);
@@ -64,7 +65,7 @@ public class Q4 implements ActionListener, KeyListener {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/account", "root", ""
+                "jdbc:mysql://localhost:3306/Account", "root", ""
             );
         } catch (Exception e) {
             e.printStackTrace();
@@ -86,7 +87,7 @@ public class Q4 implements ActionListener, KeyListener {
             String uid = t1.getText();
             String pass = new String(t2.getPassword());
 
-            String sql = "SELECT * FROM user WHERE Uid=? AND password=?";
+            String sql = "SELECT * FROM User WHERE Uid=? AND Password=?";
             PreparedStatement ps = con.prepareStatement(sql);
 
             ps.setString(1, uid);
