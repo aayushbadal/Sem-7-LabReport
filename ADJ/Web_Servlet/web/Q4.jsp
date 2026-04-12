@@ -1,5 +1,9 @@
-<%-- 
-    Document   : Q4 --> To Calculate Simple Interest
+<%--
+
+//4. Write a JSP program to compute simple interest, the input is entered by user through HTML form.
+
+
+Document   : Q4 --> To Calculate Simple Interest
     Created on : Apr 12, 2026, 7:41:40 AM
     Author     : acer
 --%>

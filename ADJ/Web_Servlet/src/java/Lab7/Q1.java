@@ -1,3 +1,8 @@
+/*
+Lab-7 (Servlet and JSP programming and RMI)
+1. Write a servlet program to find sum of digits of number entered by user through HTML form.
+*/
+
 package Lab7;
 
 import java.io.*;

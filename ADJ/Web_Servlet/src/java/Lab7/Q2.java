@@ -1,3 +1,5 @@
+//2. Write a Servlet Program to insert and display Employee information (i.e, Eid, name, address, Salary) (Database: Company, Table: Employee)
+
 package Lab7;
 
 import java.io.*;

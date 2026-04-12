@@ -1,4 +1,9 @@
 <%-- 
+
+5. Write a JSP program to update and delete Employee information whose salary is below 5000.
+(Database and table defined in question 2).
+
+
     Document   : Q5 --> To Update And Delete Employee Information whose salary is below 5000
     Created on : Apr 12, 2026, 7:53:31 AM
     Author     : acer

@@ -1,3 +1,5 @@
+// 3. Write a servlet program to create and read Cookie and session.
+
 package Lab7;
 
 import javax.servlet.*;

@@ -1,3 +1,5 @@
+//7. Write a JavaFX program to compute sum of two Integer number.
+
 package Lab7;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
