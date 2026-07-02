@@ -38,10 +38,11 @@ public class Q2 extends HttpServlet {
             String dsql="select * from Employee";
             ResultSet rs =st.executeQuery(dsql);
             out.println("<table border=\"1px solid black\">\n" +
-"                        <tr>\n" +
-"                            <th>Student Roll</th>\n" +
-"                            <th>Student Name</th>\n" +
-"                            <th>Student Semester</th>\n" +
+"                           <tr>\n" +
+"                            <th>Employee ID</th>\n" +
+"                            <th>Employee Name</th>\n" +
+"                            <th>Employee Address</th>\n" +
+"                              <th>Employee Salary</th>\n" +
 "                        </tr>");
             
                             while(rs.next()){
@@ -49,6 +50,7 @@ public class Q2 extends HttpServlet {
                                 out.println("<td>"+rs.getInt(1)+"</td>");
                                 out.println("<td>"+rs.getString(2)+"</td>");
                                 out.println("<td>"+rs.getString(3)+"</td>");
+                                out.println("<td>"+rs.getString(4)+"</td>");
                                 out.println("</tr>");
                             }
                     out.println("</table>");
