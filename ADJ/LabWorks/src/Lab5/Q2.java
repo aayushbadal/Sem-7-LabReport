@@ -160,7 +160,7 @@ public class Q2 implements ActionListener {
                 Connection con = DriverManager.getConnection(
                         "jdbc:mysql://localhost/Company", "root", "");
 
-                String sql = "UPDATE Employee SET Name=?, Address=?, Salary=? WHERE EID=?";
+                String sql = "UPDATE Employee SET Name=?, Address=?, Salary=? WHERE ID=?";
                 PreparedStatement ps = con.prepareStatement(sql);
 
                 ps.setString(1, t2.getText());
@@ -197,7 +197,7 @@ public class Q2 implements ActionListener {
                 Connection con = DriverManager.getConnection(
                         "jdbc:mysql://localhost/Company", "root", "");
 
-                String sql = "DELETE FROM Employee WHERE EID=?";
+                String sql = "DELETE FROM Employee WHERE ID=?";
                 PreparedStatement ps = con.prepareStatement(sql);
 
                 ps.setInt(1, Integer.parseInt(t1.getText()));

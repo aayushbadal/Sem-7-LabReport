@@ -75,7 +75,7 @@ public class Q1 {
                    System.out.println("Enter Employee New Salary:");
                    double usal = sc.nextDouble();
                    
-                   String usql = "update Employee set Name = ?, Address = ?, Salary = ? where EID = ?";
+                   String usql = "update Employee set Name = ?, Address = ?, Salary = ? where ID = ?";
                    PreparedStatement ps2 = con.prepareStatement(usql);
                    ps2.setString(1, uname);
                    ps2.setString(2, uaddr);
@@ -93,7 +93,7 @@ public class Q1 {
                    System.out.println("Enter Employee ID that you want to delete:");
                    int did = sc.nextInt();
                    
-                   String dsql ="delete from Employee where EID = ?";
+                   String dsql ="delete from Employee where ID = ?";
                     PreparedStatement ps3 = con.prepareStatement(dsql);
                     ps3.setInt(1,did);
                     int drow = ps3.executeUpdate();

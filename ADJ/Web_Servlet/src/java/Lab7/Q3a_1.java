@@ -15,7 +15,7 @@ public class Q3a_1 extends HttpServlet {
         PrintWriter out = res.getWriter();
         
         String cname = "BSCCSIT";
-        String cvalue = "Aayush";
+        String cvalue = "Himalaya";
         Cookie ck = new Cookie(cname, cvalue);
         
         res.addCookie(ck);

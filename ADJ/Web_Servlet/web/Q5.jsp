@@ -55,7 +55,7 @@ try {
 
     while (rs.next()) {
         out.println("<tr>");
-        out.println("<td>" + rs.getInt("Eid") + "</td>");
+        out.println("<td>" + rs.getInt("id") + "</td>");
         out.println("<td>" + rs.getString("name") + "</td>");
         out.println("<td>" + rs.getString("address") + "</td>");
         out.println("<td>" + rs.getDouble("salary") + "</td>");
